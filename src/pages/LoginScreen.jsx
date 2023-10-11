@@ -18,17 +18,17 @@ const LoginScreen = () => {
       setIsLoading(true)
       const response = await axios({
         method: 'post',
-        url: 'http://139.59.63.178:5454/api/customer/iscustomerpresent',
+        url: `${import.meta.env.VITE_URL}/customer/iscustomerpresent`,
         headers: {
-          Authorization: 'SEdRYnN6ZFFFRjpuc0oySXQ0NWt5',
-          AppVersion: '1.0.0',
+          Authorization: `${import.meta.env.VITE_AUTHORIZATION}`,
+          AppVersion: `${import.meta.env.VITE_APPVERSION}`,
         },
         data: {
           Phone: phoneNumber,
         },
       })
-      const authToken = response.data.Details.AuthToken
-      localStorage.setItem('AuthToken', JSON.stringify(authToken))
+      const userDetails = response.data.Details
+      localStorage.setItem('UserDetails', JSON.stringify(userDetails))
       navigate('/')
     } catch (error) {
       console.log('Login failed', error.message)
