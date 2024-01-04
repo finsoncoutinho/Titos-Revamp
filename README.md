@@ -31,4 +31,4 @@ npm install
 
  ## Demo
 
- [![Watch the Video](https://drive.google.com/file/d/1quEiQcAOlH8TU3Yv5FJZ_hZUkLDVTlIA/view?usp=sharing)](https://drive.google.com/file/d/1rRD2Ob3djUJe3jTjhg65zpsmV9l8pXMy/view?usp=sharing)
+ [![Watch the Video](https://drive.google.com/file/d/1quEiQcAOlH8TU3Yv5FJZ_hZUkLDVTlIA/preview)](https://drive.google.com/file/d/1rRD2Ob3djUJe3jTjhg65zpsmV9l8pXMy/view?usp=sharing)
